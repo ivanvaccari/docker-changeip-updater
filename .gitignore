@@ -1,0 +1,5 @@
+#dotenv file for loal testing
+.env
+
+# local node stuff for tests
+node_modules
