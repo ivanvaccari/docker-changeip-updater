@@ -14,6 +14,7 @@ export CHANGEIP_USERNAME=user
 export CHANGEIP_PASSWORD=password
 export CHANGEIP_RECORD=myrecord.example.com
 export UPDATE_INTERVAL=10 #seconds between checks. Defaults to 20 seconds
+export LOGLEVEL=2 # verboseness levels. 0 = disable logs, 1 = show only update logs, 2 = maximum verbosity. Defaults to 2.
 ```
 
 Then pull the latest image and run a one-off container to execute the script:
@@ -48,6 +49,17 @@ changeip:
 
 The timezone is currently set to 'Etc/UTC' but can be changed via the ```TZ``` env variable in the Dockerfile.
 
+## Logs
+
+To view logs, use the docker utility: `docker logs -f CONTAINER` 
+
+## FAQ
+- Q: I'm getting "BAD AUTH".
+  A: Check your credentials. Check for special chars which might broke passing via env variables.
+  Escape `$` with another `$` (becomes `$$`).
+
 ## Build images
 
 Just run `./build.sh`
+
+

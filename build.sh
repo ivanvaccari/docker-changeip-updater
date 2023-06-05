@@ -1,5 +1,5 @@
 #!/bin/bash
-TAG=1.0.0
+TAG=1.0.1
 
 # AMD64 arch builder
 docker build --rm --no-cache \
