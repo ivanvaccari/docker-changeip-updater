@@ -4,6 +4,8 @@ Docker container to run DNS updates to a ChangeIP.com account.
 
 Differently from [https://github.com/arnaubennassar/docker-changeip-updater](https://github.com/arnaubennassar/docker-changeip-updater), this container run a bash script periodically to check and update the ip address.
 
+🐳 Docker hub: [https://hub.docker.com/r/ivaccari/changeip-updater](https://hub.docker.com/r/ivaccari/changeip-updater)
+
 ## Quick Start
 Set the following env variables with your ChangeIP.com account info:
 
