@@ -4,8 +4,6 @@ Docker container to run DNS updates to a ChangeIP.com account.
 
 Differently from [https://github.com/arnaubennassar/docker-changeip-updater](https://github.com/arnaubennassar/docker-changeip-updater), this container run a bash script periodically to check and update the ip address.
 
-GitHub repository: [https://github.com/ivanvaccari/docker-changeip-updater](https://github.com/ivanvaccari/docker-changeip-updater)
-
 ## Quick Start
 Set the following env variables with your ChangeIP.com account info:
 
@@ -54,9 +52,10 @@ The timezone is currently set to 'Etc/UTC' but can be changed via the ```TZ``` e
 To view logs, use the docker utility: `docker logs -f CONTAINER` 
 
 ## FAQ
-- Q: I'm getting "BAD AUTH".
-  A: Check your credentials. Check for special chars which might broke passing via env variables.
-  Escape `$` with another `$` (becomes `$$`).
+
+#### I'm getting "BAD AUTH"!
+Check your credentials. Check for special chars which might broke passing via env variables.
+Escape `$` with another `$` (becomes `$$`).
 
 ## Build images
 
